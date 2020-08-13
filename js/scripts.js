@@ -1,10 +1,22 @@
 $(document).ready(function() {
   $("#triangle").submit(function(event) {
-    const userAge = parseInt($("#sideA").val());
-    const userAge = parseInt($("#sideB").val());
-    const userAge = parseInt($("#sideC").val());
+    const sideA = parseInt($("#sideA").val());
+    const sideB = parseInt($("#sideB").val());
+    const sideC = parseInt($("#sideC").val());
     event.preventDefault();
-    console.log(userAge);
+    
+    if (sideA == sideB == sideC) {
+      $("#equalTriangle").show();
+    } 
+    else if ( sideA == sideB && sideA !=sideC || sideB==sideC && sideB != sideA){ 
+      $("#isoTriangle").show();
+    } 
+    else if (sideA != sideB !=sideC ) { 
+      $("#scaleTriangle").show();
+    } 
+    else {
+      $("#noTriangle").show();
+    }
+  }); 
 }); 
-
 
