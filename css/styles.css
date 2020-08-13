@@ -1,3 +1,7 @@
-#equalTriangle, #isoTriangle, #scaleTriangle, #noTriangle{
+#equalTriangle,
+#isoTriangle,
+#scaleTriangle,
+#noTriangle,
+#noData {
   display: none;
 }
