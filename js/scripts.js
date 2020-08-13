@@ -16,8 +16,8 @@ $(document).ready(function () {
       $("#equalTriangle").show();
     }
     
-    else {
+    else (sideA === 0 && sideB === 0 && sideC === 0)
       $("#noData").show();
-    }
+      $("#scaleTriangle").hide();
   });
 });
